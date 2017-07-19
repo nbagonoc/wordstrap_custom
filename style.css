@@ -1,0 +1,209 @@
+/*
+Theme Name: WordStrap
+Author: Niccu Bagonoc
+Author URI: http://nbagonoc.com
+Description: A lightweight bootstrap boilerplate theme for wordpress, to quickly develop Wordpress + Bootstrap themes.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+body{/*fix fixed-top issude*/
+	padding-top: 50px;
+}
+
+/*pagination*/
+.page-numbers.current{
+	border: none;
+}
+.page-numbers {
+	padding: 10px;
+	border: 1px solid #eee;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.opacity70{
+	-moz-opacity: 0.7;
+	-webkit-opacity: 0.7;
+	-o-opacity: 0.7;
+	-ms-opacity: 0.7;	
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+	opacity: 0.7;
+	-moz-transition: .3s ease;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.featuredPostThumbnail {
+	width: 100%;
+	-moz-transition: .3s ease;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+/*Animation*/
+.hideAnimation{
+     opacity:0;
+}
+.viewAnimation{
+     opacity:1;
+}
+.post{
+    -moz-animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+    -o-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.container-fluid{/*fix for padding left and right, for fluid container not being 100%*/
+	padding: 0 !important;
+}
+
+.banner{
+	height: 700px;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.brand {
+	height: 23px; /*aligns the image brand/logo*/
+}
+
+.marginTop{
+	margin-top: 50px;
+}
+
+.marginTopMax{
+	margin-top: 200px;
+}
+
+/*custom search form*/
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+/*links*/
+.contentArea a, .sidebar a, .footer a{
+	text-decoration: none;
+}
+
+/*list*/
+.sidebar ul{
+	list-style: none;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/*vetical align*/
+.verticalAlign{
+	position: relative;
+}
+.verticalAlignElement{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+}
+
+/*main content area*/
+.contentArea{
+
+}
+
+/*left sidebar*/
+.sidebar{
+
+}
+
+/*footer*/
+.footer{
+	background-color: #eee;
+}
+
+.footerMenu{
+	padding-top: 50px;
+}
+.footerCopyright{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*extra small*/
+@media(max-width:767px){
+	.banner{
+		height: 400px;
+	}
+	.footerCopyright p{
+		text-align: center;
+	}
+	.footerMenu ul{
+		text-align: center;
+	}
+}
+
+/*small*/
+@media(min-width:768px){
+	.banner{
+		height: 500px;
+	}
+	.footerCopyright p{
+		text-align: center;
+	}
+	.footerMenu ul{
+		text-align: center;
+	}
+}
+
+/*medium*/
+@media(min-width:992px){
+	.banner{
+		height: 600px;
+	}
+	.footerCopyright p{
+		text-align: right;
+	}
+	.footerMenu ul{
+		text-align: left;
+	}
+}
+
+/*large*/
+@media(min-width:1200px){
+	.banner{
+		height: 700px;
+	}
+	.footerCopyright p{
+		text-align: right;
+	}
+	.footerMenu ul{
+		text-align: left;
+	}
+}
