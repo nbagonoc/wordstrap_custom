@@ -34,17 +34,33 @@ function add_scripts(){
 add_action('wp_enqueue_scripts', 'add_scripts');
 
 //add sidebar  support
-function sidebar() {
+function widget() {
 	register_sidebar(array(
-		'name'          => 'sidebar',
+		'name'          => 'The Sidebar',
 		'id'            => 'sidebar',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	));
+	register_sidebar(array(
+		'name'          => 'The Footerbar Left',
+		'id'            => 'footerleft',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	));
+	register_sidebar(array(
+		'name'          => 'The Footerbar Right',
+		'id'            => 'footerright',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	));
 }
-add_action( 'widgets_init', 'sidebar' );
+add_action( 'widgets_init', 'widget' );
 
 
 //pagination Bootstrap

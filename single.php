@@ -15,7 +15,7 @@
 			</div>
 
 			<div class="sidebar marginTop widget-area col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<?php get_sidebar('sidebar'); ?>
+				<?php dynamic_sidebar('sidebar') ?>
 			</div>
 			
 		</div>
