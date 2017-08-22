@@ -1,7 +1,10 @@
 <?php
 
 //add menu feature
-register_nav_menus(array('main-nav'=>'Main Navigation'));
+register_nav_menus(array('main-nav'=>'wordstrap'));
+
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
 
 //remove admin bar from site
 add_filter('show_admin_bar', '__return_false');

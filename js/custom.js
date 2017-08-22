@@ -16,6 +16,16 @@ $(document).ready(function(){
     $('.post').addClass("hideAnimation").viewportChecker({
         classToAdd: 'viewAnimation animated fadeIn',
         offset: 200
-	});
+    });
+
+    //makes the dropdown parent menu clickable
+    //$('a.dropdown-toggle').addClass('disabled');
+
+    /*Dropdown menu opens during hover, but clickable/tappable during mobile view*/
+    $('.dropdown').on('mouseenter mouseleave click tap', function(event) {
+      if (!$('.navbar-toggle').is(':visible')) {
+        $(this).toggleClass("open");
+      }
+    });
 
 });
