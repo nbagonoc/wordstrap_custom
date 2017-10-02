@@ -3,7 +3,7 @@ Theme Name: WordStrap
 Author: Niccu Bagonoc
 Author URI: http://nbagonoc.com
 Description: A lightweight bootstrap boilerplate theme for wordpress, to quickly develop Wordpress + Bootstrap themes.
-Version: 1.1
+Version: 4.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -77,14 +77,6 @@ body{/*fix fixed-top issude*/
 	height: 23px; /*aligns the image brand/logo*/
 }
 
-.marginTop{
-	margin-top: 50px;
-}
-
-.marginTopMax{
-	margin-top: 200px;
-}
-
 /*custom search form*/
 .stylish-input-group .input-group-addon{
     background: white !important; 
@@ -153,6 +145,66 @@ body{/*fix fixed-top issude*/
 	padding-bottom: 50px;
 }
 
+/*SPACING//////////////////////////////////////////////////*/
+/*TOP*/
+.space-top-xs{
+	margin-top: 12px;
+	padding-top: 0;
+}
+.space-top-sm{
+	margin-top: 24px;
+	padding-top: 0;
+}
+.space-top-md{
+	margin-top: 44px;
+	padding-top: 0;
+}
+.space-top-lg{
+	margin-top: 88px;
+	padding-top: 0;
+}
+/*BOTTOM*/
+.space-bottom-xs{
+	margin-bottom: 12px;
+	padding-bottom: 0;
+}
+.space-bottom-sm{
+	margin-bottom: 24px;
+	padding-bottom: 0;
+}
+.space-bottom-md{
+	margin-bottom: 44px;
+	padding-bottom: 0;
+}
+.space-bottom-lg{
+	margin-bottom: 88px;
+	padding-bottom: 0;
+}
+/*TOP AND BOTTOM*/
+.space-xs{
+	margin-top: 12px;
+	padding-top: 0;
+	margin-bottom: 12px;
+	padding-bottom: 0;
+}
+.space-sm{
+	margin-top: 24px;
+	padding-top: 0;
+	margin-bottom: 24px;
+	padding-bottom: 0;
+}
+.space-md{
+	margin-top: 44px;
+	padding-top: 0;
+	margin-bottom: 44px;
+	padding-bottom: 0;
+}
+.space-lg{
+	margin-top: 88px;
+	padding-top: 0;
+	margin-bottom: 88px;
+	padding-bottom: 0;
+}
 
 /*MEDIA QUERIES*/
 

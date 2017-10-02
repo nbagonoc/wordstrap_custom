@@ -4,7 +4,7 @@
 		<span class="input-group-addon">
 			<!-- <button type="submit" value="5" name="cat" id="scat">search specific category ID -->
 			<button type="submit">
-				<span class="glyphicon glyphicon-search"></span>
+				<span class="fa fa-search"></span>
 			</button>  
 		</span>
 	</div>
