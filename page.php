@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-
-	<div class="container">
-		<div class="contentArea marginTop">
+	<div class="content-area space-lg">
+		<div class="container">
 			<!-- retrieves a post/page, if any -->
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<h2 class="text-uppercase"><?php the_title(); ?></h2>
@@ -12,5 +11,4 @@
 			<?php wp_reset_postdata(); ?>
 		</div>
 	</div>
-
 <?php get_footer(); ?>

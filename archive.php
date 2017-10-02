@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="container">
 		<div class="row">
-			<div class="contentArea space-lg col-md-8">
+			<div class="content-area space-lg col-md-8">
 				<!-- retrieves a post/page, if any -->
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 					<a href="<?php the_permalink(); ?>"><h2 class="text-uppercase"><?php the_title(); ?></h2></a>

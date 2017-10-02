@@ -41,14 +41,13 @@
 	
 	</div><!-- banner closed -->
 	*/ ?>
-	<div class="container"><!-- search bar -->
-		<div class="search marginTop">
+	<div class="search space-lg ">
+		<div class="container post-d post-delay-a">
 			<?php get_search_form(); ?>
 		</div>
-	</div><!-- close search bar -->
-
-	<div class="container"><!-- featured post -->
-		<div class="contentArea marginTop post">
+	</div>
+	<div class="content-area space-lg">
+		<div class="container">
 			<div class="row">
 				<!-- retrieves a post/page, if any -->
 				<?php $query = new WP_Query('cat=30&posts_per_page=3'); ?>	
@@ -64,6 +63,5 @@
 				<?php wp_reset_postdata(); ?>
 			</div>
 		</div>
-	</div><!--close featured post  -->
-	
+	</div>
 <?php get_footer(); ?>

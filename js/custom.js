@@ -10,29 +10,29 @@ $(document).ready(function(){
   }
 
   /*adds the animation class to trigger animate.css*/
-  $('.post-a').addClass("hideAnimation").viewportChecker({
-      classToAdd: 'viewAnimation animated fadeIn',
-      offset: 250
+  $('.post-a').addClass("hide-animation").viewportChecker({
+      classToAdd: 'view-animation animated fadeIn',
+      offset: 150
   });
-  $('.post-b').addClass("hideAnimation").viewportChecker({
-      classToAdd: 'viewAnimation animated flipInX',
-      offset: 250
+  $('.post-b').addClass("hide-animation").viewportChecker({
+      classToAdd: 'view-animation animated flipInX',
+      offset: 150
   });
-  $('.post-c').addClass("hideAnimation").viewportChecker({
-      classToAdd: 'viewAnimation animated bounceIn',
-      offset: 250
+  $('.post-c').addClass("hide-animation").viewportChecker({
+      classToAdd: 'view-animation animated bounceIn',
+      offset: 150
   });
-  $('.post-d').addClass("hideAnimation").viewportChecker({
-      classToAdd: 'viewAnimation animated fadeInUp',
-      offset: 200
+  $('.post-d').addClass("hide-animation").viewportChecker({
+      classToAdd: 'view-animation animated fadeInUp',
+      offset: 150
   });
-  $('.post-e').addClass("hideAnimation").viewportChecker({
-      classToAdd: 'viewAnimation animated fadeInLeft',
-      offset: 250
+  $('.post-e').addClass("hide-animation").viewportChecker({
+      classToAdd: 'view-animation animated fadeInLeft',
+      offset: 150
   });
-  $('.post-f').addClass("hideAnimation").viewportChecker({
-      classToAdd: 'viewAnimation animated fadeInRight',
-      offset: 250
+  $('.post-f').addClass("hide-animation").viewportChecker({
+      classToAdd: 'view-animation animated fadeInRight',
+      offset: 150
   });
 
   //fix ie BUG on fixed-background CSS
