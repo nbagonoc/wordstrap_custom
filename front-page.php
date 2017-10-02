@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+	<?php /* 
 	<!-- Banner Slider make sure to add active class on 1st item via jqeury-->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -40,7 +40,7 @@
 		</a>
 	
 	</div><!-- banner closed -->
-
+	*/ ?>
 	<div class="container"><!-- search bar -->
 		<div class="search marginTop">
 			<?php get_search_form(); ?>
