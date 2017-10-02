@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /*GLOBAL//////////////////////////////////////////////////*/
 body{
+	padding-top: 80px;
 	font-weight: lighter;
 	font-size: 15px;
 	color: #444;
@@ -68,12 +69,22 @@ body h5{
 .container-fluid{/*fix for padding left and right, for fluid container not being 100%*/
 	padding: 0 !important;
 }
-body{/*fix fixed-top issude*/
-	padding-top: 50px;
+
+/*NAVIGATION//////////////////////////////////////////////////*/
+.navbar-brand{
+	padding: 12px 15px;
+	height: 80px;
+	line-height: 80px;
 }
-.brand {
-	height: 23px; /*aligns the image brand/logo*/
+.navbar-toggle {
+	margin-top: 23px;
+	padding: 9px 10px !important;
 }
+/*increasing the height of the mobile menu container*/
+.navbar-collapse { 
+    max-height: 100% !important; 
+}
+
 
 /*BANNER//////////////////////////////////////////////////*/
 .banner-a{
@@ -314,6 +325,11 @@ body{/*fix fixed-top issude*/
 
 /*small*/
 @media(min-width:768px){
+	.navbar-nav>li>a{
+		padding-top: 26.5px;
+		padding-bottom: 26.5px;
+		line-height: 27px;
+	}
 	.banner{
 		height: 500px;
 	}
@@ -327,6 +343,11 @@ body{/*fix fixed-top issude*/
 
 /*medium*/
 @media(min-width:992px){
+	.navbar-nav>li>a{
+		padding-top: 26.5px;
+		padding-bottom: 26.5px;
+		line-height: 27px;
+	}
 	.banner{
 		height: 600px;
 	}
@@ -340,6 +361,11 @@ body{/*fix fixed-top issude*/
 
 /*large*/
 @media(min-width:1200px){
+	.navbar-nav>li>a{
+		padding-top: 26.5px;
+		padding-bottom: 26.5px;
+		line-height: 27px;
+	}
 	.banner{
 		height: 700px;
 	}
