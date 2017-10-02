@@ -71,6 +71,10 @@ body h5{
 }
 
 /*NAVIGATION//////////////////////////////////////////////////*/
+.navbar{
+	/*background: #222 !important;*/
+	/*border-bottom: 1px solid #191919 !important;*/
+}
 .navbar-brand{
 	padding: 12px 15px;
 	height: 80px;
