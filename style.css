@@ -13,7 +13,7 @@ body{
 	padding-top: 80px;
 	font-weight: lighter;
 	font-size: 15px;
-	color: #444;
+	color: #999;
 }
 body a{
 	text-decoration: none !important;
@@ -72,8 +72,8 @@ body h5{
 
 /*NAVIGATION//////////////////////////////////////////////////*/
 .navbar{
-	/*background: #222 !important;*/
-	/*border-bottom: 1px solid #191919 !important;*/
+	background: #FEFEFE !important;
+	border-bottom: 1px solid #EEE !important;
 }
 .navbar-brand{
 	padding: 12px 15px;
@@ -84,10 +84,46 @@ body h5{
 	margin-top: 23px;
 	padding: 9px 10px !important;
 }
+#navbar>ul>li>a{
+	background: #FEFEFE !important;
+	color: #999;
+}
+#navbar>ul>li>a:hover{
+	color: #333;
+}
+.active>a{
+	color: #333 !important;
+	background: #FEFEFE !important;
+}
+.current-menu-parent>a {
+	color: #333 !important;
+}
+#navbar>ul>li:hover>a { 
+	color: #333 !important;
+}
+#navbar>ul>li>.dropdown-menu{
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	border: 1px solid #EEE;
+	padding: 0;
+	background-color: #FEFEFE;
+}
+#navbar>ul>li>.dropdown-menu>li>a{
+	background: #FEFEFE;
+	color: #999;
+	padding: 10px 0 10px 24px;
+	border-top: 1px solid #EEE;
+}
+#navbar>ul>li>.dropdown-menu>li>a:hover{
+	color: #333;
+	background: #EEE;
+}
 /*increasing the height of the mobile menu container*/
 .navbar-collapse { 
     max-height: 100% !important; 
 }
+
 
 
 /*BANNER//////////////////////////////////////////////////*/
@@ -248,7 +284,6 @@ body h5{
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	color: #FFF;
 }
 
 /*SPACING//////////////////////////////////////////////////*/
@@ -317,7 +352,6 @@ body h5{
 /*extra small*/
 @media(max-width:767px){
 	.banner{
-		height: 400px;
 	}
 	.footer-copyright p{
 		text-align: center;
@@ -335,7 +369,6 @@ body h5{
 		line-height: 27px;
 	}
 	.banner{
-		height: 500px;
 	}
 	.footer-copyright p{
 		text-align: center;
@@ -353,7 +386,6 @@ body h5{
 		line-height: 27px;
 	}
 	.banner{
-		height: 600px;
 	}
 	.footer-copyright p{
 		text-align: right;
@@ -371,7 +403,6 @@ body h5{
 		line-height: 27px;
 	}
 	.banner{
-		height: 700px;
 	}
 	.footer-copyright p{
 		text-align: right;
