@@ -220,6 +220,12 @@ body h5{
 	-o-transition: .3s ease;
     transition: .3s ease;
 }
+.hover-image{
+	-moz-transition: .3s ease;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+    transition: .3s ease;
+}
 
 /*ANIMATION//////////////////////////////////////////////////*/
 .hide-animation{
