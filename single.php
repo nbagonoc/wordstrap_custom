@@ -4,8 +4,8 @@
 			<div class="content-area space-lg col-md-8">
 				<!-- retrieves a post/page, if any -->
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-					<a href="<?php the_permalink(); ?>"><h2 class="text-uppercase"><?php the_title(); ?></h2></a>
-					<p><?php echo get_the_excerpt(); ?></p>
+					<h2 class="text-uppercase"><?php the_title(); ?></h2>
+					<p><?php echo get_the_content(); ?></p>
 					<hr>
 				<?php endwhile; ?>
 					<div class="pagination text-center">
