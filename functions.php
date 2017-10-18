@@ -13,10 +13,17 @@ add_filter('show_admin_bar', '__return_false');
 add_theme_support('post-thumbnails');
 
 //add custom image size. add image size b4 uploading images
-add_image_size('background', 1920, 720, true);
+add_image_size('background', 720, 300, true);
 
 //add custom image size. add image size b4 uploading images
-add_image_size('custom', 480, 320, true);
+add_image_size('custom', 720, 200, true);
+
+// REMOVE MEDIUM SIZE IMAGE WORDPRESS GENERATING
+function remove_default_image_sizes($sizes) {
+    unset( $sizes['medium_large']);
+    return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced','remove_default_image_sizes');
 
 //insert styles
 function add_styles(){
@@ -125,15 +132,21 @@ function sa_bootstrap_paginate_links() {
 }
 
 // REMOVE WP EMOJI
-remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_head','print_emoji_detection_script',7);
 remove_action('wp_print_styles', 'print_emoji_styles');
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-remove_action( 'admin_print_styles', 'print_emoji_styles' );
+remove_action('admin_print_scripts','print_emoji_detection_script');
+remove_action('admin_print_styles','print_emoji_styles');
 
 // LIMIT EXCERPT LENGTH
-function limit_excerpt_length( $length ) {
-	return 20;
+function limit_excerpt_length($length) {
+	return 24;
 }
-add_filter( 'excerpt_length', 'limit_excerpt_length', 999 );
+add_filter('excerpt_length','limit_excerpt_length');
+
+// CHANGE THE LAST PART ON THE EXCERPT
+function change_excerpt_more($more) {
+    return '..';
+}
+add_filter( 'excerpt_more', 'change_excerpt_more' );
 
 ?>

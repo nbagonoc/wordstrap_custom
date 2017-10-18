@@ -52,7 +52,7 @@
 				<!-- retrieves a post/page, if any -->
 				<?php $query = new WP_Query('cat=30&posts_per_page=3'); ?>	
 				<?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="col-md-4">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('custom', array('class'=>'img-responsive featuredPostThumbnail')); ?></a>
 							<a href="<?php the_permalink(); ?>"><h2 class="text-capitalize text-center"><?php the_title(); ?></h2></a>
 							<p><?php echo get_the_excerpt(); ?></p>
