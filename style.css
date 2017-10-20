@@ -125,7 +125,6 @@ body h5{
 }
 
 
-
 /*BANNER//////////////////////////////////////////////////*/
 .banner-a{
 	height: auto;
@@ -145,6 +144,12 @@ body h5{
 }
 
 /*BACKGROUND//////////////////////////////////////////////////*/
+.background-light{
+	background: #FEFEFE;
+}
+.background-gray{
+	background: #F9F9F9;
+}
 .background-a{
 	height: auto;
 	width: 100%;
@@ -295,62 +300,99 @@ body h5{
 /*SPACING//////////////////////////////////////////////////*/
 /*TOP*/
 .space-top-xs{
-	padding-top: 12px;
-	margin-top: 0;
+	padding-top: 15px;
 }
 .space-top-sm{
 	padding-top: 24px;
-	margin-top: 0;
 }
 .space-top-md{
 	padding-top: 44px;
-	margin-top: 0;
 }
 .space-top-lg{
 	padding-top: 88px;
-	margin-top: 0;
 }
 /*BOTTOM*/
 .space-bottom-xs{
-	padding-bottom: 12px;
-	margin-bottom: 0;
+	padding-bottom: 15px;
 }
 .space-bottom-sm{
 	padding-bottom: 24px;
-	margin-bottom: 0;
 }
 .space-bottom-md{
 	padding-bottom: 44px;
-	margin-bottom: 0;
 }
 .space-bottom-lg{
 	padding-bottom: 88px;
-	margin-bottom: 0;
 }
 /*TOP AND BOTTOM*/
 .space-xs{
-	padding-top: 12px;
-	margin-top: 0;
-	padding-bottom: 12px;
-	margin-bottom: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .space-sm{
 	padding-top: 24px;
-	margin-top: 0;
 	padding-bottom: 24px;
-	margin-bottom: 0;
 }
 .space-md{
 	padding-top: 44px;
-	margin-top: 0;
 	padding-bottom: 44px;
-	margin-bottom: 0;
 }
 .space-lg{
 	padding-top: 88px;
-	margin-top: 0;
 	padding-bottom: 88px;
-	margin-bottom: 0;
+}
+/*overall*/
+.space{
+	padding: 15px;
+}
+
+/*GAP//////////////////////////////////////////////////*/
+/*TOP*/
+.gap-top-xs{
+	margin-top: 15px;
+}
+.gap-top-sm{
+	margin-top: 24px;
+}
+.gap-top-md{
+	margin-top: 44px;
+}
+.gap-top-lg{
+	margin-top: 88px;
+}
+/*BOTTOM*/
+.gap-bottom-xs{
+	margin-bottom: 15px;
+}
+.gap-bottom-sm{
+	margin-bottom: 24px;
+}
+.gap-bottom-md{
+	margin-bottom: 44px;
+}
+.gap-bottom-lg{
+	margin-bottom: 88px;
+}
+/*TOP AND BOTTOM*/
+.gap-xs{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.gap-sm{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.gap-md{
+	margin-top: 44px;
+	margin-bottom: 44px;
+}
+.gap-lg{
+	margin-top: 88px;
+	margin-bottom: 88px;
+}
+/*overall*/
+.gap{
+	margin: 15px;
 }
 
 /*MEDIA QUERIES//////////////////////////////////////////////////*/
