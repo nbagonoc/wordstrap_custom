@@ -341,9 +341,30 @@ body h5{
 	padding-top: 88px;
 	padding-bottom: 88px;
 }
+/*sides*/
+.space-side{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.space-left{
+	padding-left: 15px;
+}
+.space-right{
+	padding-right: 15px;
+}
 /*overall*/
 .space{
 	padding: 15px;
+}
+/*no space*/
+.no-space{
+	padding: 0;
+}
+.no-space-left{
+	padding-left: 0;
+}
+.no-space-right{
+	padding-right: 0;
 }
 
 /*GAP//////////////////////////////////////////////////*/
@@ -390,9 +411,30 @@ body h5{
 	margin-top: 88px;
 	margin-bottom: 88px;
 }
+/*sides*/
+.gap-side{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.gap-left{
+	margin-left: 15px;
+}
+.gap-right{
+	margin-right: 15px;
+}
 /*overall*/
 .gap{
 	margin: 15px;
+}
+/*no gap*/
+.no-gap{
+	margin: 0;
+}
+.no-gap-left{
+	margin-left: 0;
+}
+.no-gap-right{
+	margin-right: 0;
 }
 
 /*MEDIA QUERIES//////////////////////////////////////////////////*/
@@ -400,6 +442,18 @@ body h5{
 /*extra small*/
 @media(max-width:767px){
 	.banner{
+	}
+	.no-space-left{
+		padding-left: 15px;
+	}
+	.no-space-right{
+		padding-right: 15px;
+	}
+	.no-gap-left{
+		margin-left: 15px;
+	}
+	.no-gap-right{
+		margin-right: 15px;
 	}
 	.footer-copyright p{
 		text-align: center;
