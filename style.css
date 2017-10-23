@@ -99,8 +99,8 @@ body h5{
 
 /*NAVIGATION//////////////////////////////////////////////////*/
 .navbar{
-	background: #FEFEFE !important;
-	border-bottom: 1px solid #EEE !important;
+	background: #3E043E !important;
+	border-bottom: 1px solid #A1779D !important;
 }
 .navbar-brand{
 	padding: 12px 15px;
@@ -112,39 +112,36 @@ body h5{
 	padding: 9px 10px !important;
 }
 #navbar>ul>li>a{
-	background: #FEFEFE !important;
-	color: #999;
+	background: #3E043E !important;
+	color: #A1779D;
 }
-#navbar>ul>li>a:hover{
-	color: #333;
+#navbar>ul>li:hover>a {
+	color: #FFF;
 }
 .active>a{
-	color: #333 !important;
-	background: #FEFEFE !important;
+	color: #FFF !important;
+	background: #3E043E !important;
 }
 .current-menu-parent>a {
-	color: #333 !important;
-}
-#navbar>ul>li:hover>a { 
-	color: #333 !important;
+	color: #FFF !important;
 }
 #navbar>ul>li>.dropdown-menu{
 	-moz-border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
 	border-radius: 0 !important;
-	border: 1px solid #EEE;
+	border: none;
 	padding: 0;
-	background-color: #FEFEFE;
+	background: #27002C;
 }
 #navbar>ul>li>.dropdown-menu>li>a{
-	background: #FEFEFE;
-	color: #999;
+	background: #27002C;
+	color: #A1779D;
 	padding: 10px 0 10px 24px;
-	border-top: 1px solid #EEE;
+	border-top: 1px solid #A1779D;
 }
 #navbar>ul>li>.dropdown-menu>li>a:hover{
-	color: #333;
-	background: #EEE;
+	color: #FFF;
+	background: #3E043E;
 }
 /*increasing the height of the mobile menu container*/
 .navbar-collapse { 
@@ -494,6 +491,13 @@ body h5{
 
 /*extra small*/
 @media(max-width:767px){
+	.navbar-toggle {
+		background: none !important;
+		border: 1px solid #A1779D !important;
+	}
+	.navbar-toggle .icon-bar{
+		background: #A1779D !important;
+	}
 	.banner{
 	}
 	.no-space-left{
