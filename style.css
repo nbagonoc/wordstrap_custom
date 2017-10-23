@@ -13,10 +13,11 @@ body{
 	padding-top: 80px;
 	font-weight: lighter;
 	font-size: 15px;
-	color: #999;
+	color: #666;
 }
 body a{
 	text-decoration: none !important;
+	color: #A1779D;
 	-moz-transition: .2s ease;
 	-webkit-transition: .2s ease;
 	-o-transition: .2s ease;
@@ -24,13 +25,14 @@ body a{
 }
 body a:hover{
 	text-decoration: none !important;
+	color: #69548F;
 	-moz-transition: .2s ease;
 	-webkit-transition: .2s ease;
 	-o-transition: .2s ease;
     transition: .2s ease;
 }
 body h1{
-	font-weight: bolder;
+	font-weight: bold;
 	font-size: 46px;
 	color: #333;
 	padding: 0 auto;
@@ -63,6 +65,31 @@ body h5{
 	color: #333;
 	padding: 0 auto;
 	margin: 0 auto;
+}
+
+/*COLORS//////////////////////////////////////////////////*/
+.color-light{
+	background: #FEFEFE;
+}
+.color-gray{
+	background: #F9F9F9;
+}
+.color-dark{
+	background: #333;
+}
+.color-violet-light{
+	background: #3E043E;
+}
+.color-violet-dark{
+	background: #27002C;
+}
+
+/*FONT STYLES//////////////////////////////////////////////////*/
+.normal{
+	font-style: normal;
+}
+.italic{
+	font-style: italic;
 }
 
 /*BOOTSTRAP FIX//////////////////////////////////////////////////*/
@@ -150,6 +177,15 @@ body h5{
 .background-gray{
 	background: #F9F9F9;
 }
+.background-dark{
+	background: #333;
+}
+.background-violet-light{
+	background: #3E043E;
+}
+.background-violet-dark{
+	background: #27002C;
+}
 .background-a{
 	height: auto;
 	width: 100%;
@@ -168,14 +204,15 @@ body h5{
 	background-size: cover;
 }
 
-/*CONTENT-AREA//////////////////////////////////////////////////*/
-.content-area{
-	background-color: #FEFEFE;
+/*CONTENT//////////////////////////////////////////////////*/
+.content{
+}
+.content a{
+	font-weight: bold;
 }
 
 /*SIDEBAR//////////////////////////////////////////////////*/
 .sidebar{
-	background-color: #FEFEFE;
 }
 .sidebar ul{
 	list-style: none;
@@ -185,7 +222,6 @@ body h5{
 
 /*FOOTER//////////////////////////////////////////////////*/
 .footer{
-	background-color: #333;
 }
 .footer-menu{
 }
@@ -278,6 +314,23 @@ body h5{
     border:0;
     background:transparent;
 }
+
+/*BUTTON//////////////////////////////////////////////////*/
+.btn-custom{
+	padding: 15px auto;
+	background: #3E043E;
+	color: #FFF;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	border: none;
+}
+.btn-custom:hover{
+	background: #27002C;
+	color: #FFF;
+}
+
 
 /*VERTICAL ALIGN//////////////////////////////////////////////////*/
 .vertical-align{

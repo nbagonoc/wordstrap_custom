@@ -1,14 +1,16 @@
 <?php get_header(); ?>
-	<div class="search space-lg">
+	<div class="space-lg">
 		<div class="container">
-			<h2 class="text-center">LOOKING FOR SOMETHING?</h2>
-			<?php get_search_form(); ?>
+			<div class="search">
+				<h2 class="text-center">LOOKING FOR SOMETHING?</h2>
+				<?php get_search_form(); ?>
+			</div>
 		</div>
 	</div>
-	<div class="content-area space-bottom-lg">
+	<div class="space-bottom-lg">
 		<div class="container">		
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-				<div class="search-results">
+				<div class="search-result">
 					<a href="<?php the_permalink(); ?>"><h3 class="text-uppercase"><?php the_title(); ?></h3></a>
 					<p> <?php the_time('F jS, Y'); ?> - <?php echo get_the_excerpt(); ?></p>
 				</div>

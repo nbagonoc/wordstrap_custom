@@ -1,23 +1,24 @@
-	<div class="footer">
+	<div class="background-dark space-lg">
 		<div class="container">
-			<div class="footer-menu space-lg">
+			<div class="footer-menu">
 				<div class="row">
-					<div class="footerMenuElement col-sm-3">
+					<div class="col-sm-3">
 						<?php dynamic_sidebar('footer-a') ?>
 					</div>
-					<div class="footerMenuElement col-sm-3">
+					<div class="col-sm-3">
 						<?php dynamic_sidebar('footer-b') ?>
 					</div>
-					<div class="footerMenuElement col-sm-3">
+					<div class="col-sm-3">
 						<?php dynamic_sidebar('footer-c') ?>
 					</div>
-					<div class="footerMenuElement col-sm-3">
+					<div class="col-sm-3">
 						<?php dynamic_sidebar('footer-d') ?>
 					</div>
 				</div><!-- END ROW -->
 			</div><!-- END FOOTERMENU -->
 			<hr>
-			<div class="footer-copyrights space-lg">
+			<div class="footer-copyrights">
+				<!-- empty -->
 			</div><!-- END FOOTERCOPYRIGHTS -->
 		</div><!-- END CONTAINER -->
 	</div>
