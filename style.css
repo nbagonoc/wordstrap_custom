@@ -92,11 +92,6 @@ body h5{
 	font-style: italic;
 }
 
-/*BOOTSTRAP FIX//////////////////////////////////////////////////*/
-.container-fluid{/*fix for padding left and right, for fluid container not being 100%*/
-	padding: 0 !important;
-}
-
 /*NAVIGATION//////////////////////////////////////////////////*/
 .navbar{
 	background: #3E043E !important;
