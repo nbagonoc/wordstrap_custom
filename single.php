@@ -4,7 +4,6 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="content">
-						<!-- retrieves a post/page, if any -->
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 							<h2 class="text-uppercase"><?php the_title(); ?></h2>
 							<p><?php echo get_the_content(); ?></p>
