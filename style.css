@@ -342,6 +342,25 @@ body h5{
 	margin: 0;
 }
 
+
+/*BORDER//////////////////////////////////////////////////*/
+.border{
+	border: 1px solid #eee;
+}
+.border-top{
+	border-top: 1px solid #eee;
+}
+.border-bottom{
+	border-bottom: 1px solid #eee;
+}
+.border-left{
+	border-left: 1px solid #eee;
+}
+.border-right{
+	border-right: 1px solid #eee;
+}
+
+
 /*SPACING//////////////////////////////////////////////////*/
 /*TOP*/
 .space-top-xs{
