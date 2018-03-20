@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>
 		<?php if(is_front_page()): ?>
-			<?php bloginfo('name'); ?><?php echo " &#45; Software Outsourcing" ?>
+			<?php bloginfo('name'); ?><?php echo " &#45; Tagline Here" ?>
 		<?php elseif(is_single()): ?>
 			<?php wp_title(''); ?>
 		<?php else: ?>
-			<?php bloginfo('name'); ?><?php echo " &#45; Software Outsourcing" ?><?php wp_title('&#124;'); ?>
+			<?php bloginfo('name'); ?><?php echo " &#45; Tagline Here" ?><?php wp_title('&#124;'); ?>
 		<?php endif; ?>
 	</title>
 	<!-- <meta name="keywords" content="image moderation service, image moderation, social media content moderation, software development outsourcing company, software outsourcing company, software development Vietnam, outsource software development, Moderation Outsourcing, software development, outsource QA company, mobile development outsourcing, game development testing, outsource mobile game development, Brand Moderation, Brand Moderation Outsourcing, content moderation outsourcing, content moderation, outsourcing software development trends, software development outsourcing trends, tools used in software development, automated testing benefits, android testing book, game development software for android, mobile application automation tools, cross platform browser testing"> -->
