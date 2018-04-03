@@ -7,6 +7,10 @@
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 							<h2 class="text-uppercase"><?php the_title(); ?></h2>
 							<p><?php echo get_the_content(); ?></p>
+							<?php
+								$nb_option = get_post_meta($post->ID, 'nb_option_meta_key', true);
+								echo 'meta box value: '. $nb_option;
+							?>
 						<?php endwhile; ?>
 						<?php else: ?>
 						<?php endif; ?>

@@ -65,13 +65,14 @@
 <div class="space-sm background-light">
 	<div class="container">
 		<div class="row">
-			<?php $query = new WP_Query('cat=1&posts_per_page=3'); ?>				
+			<?php //$query = new WP_Query('cat=1&posts_per_page=3'); ?>	
+			<?php $query = new WP_Query('post_type[]=post&post_type[]=review&posts_per_page=6'); ?>			
 			<?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
 				<div class="col-md-4 mobile-space">
 					<div class="border radius space background-white">
 						<h3 class="text-center text-uppercase"><?php the_title(); ?></h3>
 						<?php the_excerpt(); ?>
-						<a href="" class="btn btn-custom text-uppercase center-block">text goes here</a>
+						<a href="<?php the_permalink(); ?>" class="btn btn-custom text-uppercase center-block">text goes here</a>
 					</div>
 				</div>
 			<?php endwhile; ?>
@@ -105,7 +106,7 @@
 			<!-- sidebar -->
 			<div class="col-md-4 mobile-space">
 				<div class="sidebar" data-offset-smart-dynamic>
-					<?php dynamic_sidebar('sidebar'); ?>
+						<?php dynamic_sidebar('sidebar'); ?>
 				</div>
 			</div><!-- /sidebar -->
 		</div>
